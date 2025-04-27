@@ -10,6 +10,8 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = "ap-southeast-1"
-  profile = "ostad"
+  access_key = var.access_key
+  secret_key = var.secret_key
+  token = var.token
 }
 
